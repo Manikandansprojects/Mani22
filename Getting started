@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quick Setup</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* LEFT PANEL */
+.left {
+    flex: 1;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Steps */
+.step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-left {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-text b {
+    display: block;
+}
+
+.step-text span {
+    color: #777;
+    font-size: 13px;
+}
+
+.arrow {
+    color: green;
+    font-size: 18px;
+}
+
+/* RIGHT PANEL */
+.right {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+/* Columns */
+.column {
+    flex: 1;
+    border-radius: 12px;
+    padding: 15px;
+    color: #333;
+}
+
+.customer {
+    background: #d9f2ea;
+}
+
+.admin {
+    background: #e3ecf7;
+}
+
+.field {
+    background: #f7e7d6;
+}
+
+/* Column Title */
+.column h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Box */
+.box {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <div class="title">Quick Setup</div>
+        <div class="subtitle">Get everything ready in just a few simple steps!</div>
+
+        <div class="card">
+
+            <div class="card-header">
+                <span>Lets get you started</span>
+                <span>0/4</span>
+            </div>
+
+            <div class="progress-bar"></div>
+
+            <div class="step">
+                <div class="step-left">
+                    <div class="icon">✔</div>
+                    <div class="step-text">
+                        <b>Add Your Organization Details</b>
+                        <span>Provide your business name, address, logo, and working hours.</span>
+                    </div>
+                </div>
+                <div class="arrow">➜</div>
+            </div>
+
+            <div class="step">
+                <div class="step-left">
+                    <div class="icon">✔</div>
+                    <div class="step-text">
+                        <b>Set Up Your Services</b>
+                        <span>Define and configure the services your business offers.</span>
+                    </div>
+                </div>
+                <div class="arrow">➜</div>
+            </div>
+
+            <div class="step">
+                <div class="step-left">
+                    <div class="icon">✔</div>
+                    <div class="step-text">
+                        <b>Add Your Team</b>
+                        <span>Invite team members and assign roles to get started.</span>
+                    </div>
+                </div>
+                <div class="arrow">➜</div>
+            </div>
+
+            <div class="step">
+                <div class="step-left">
+                    <div class="icon">✔</div>
+                    <div class="step-text">
+                        <b>Configure your Email</b>
+                        <span>Set up sender email for communication and updates.</span>
+                    </div>
+                </div>
+                <div class="arrow">➜</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <!-- CUSTOMER -->
+        <div class="column customer">
+            <h4>CUSTOMER</h4>
+            <div class="box">Create Request</div>
+            <div class="box">Approve Estimate</div>
+            <div class="box">Customer Feedback</div>
+            <div class="box">Customer Payment</div>
+        </div>
+
+        <!-- ADMIN -->
+        <div class="column admin">
+            <h4>DISPATCHER / ADMIN</h4>
+            <div class="box">Convert to Estimate</div>
+            <div class="box">Convert to Work Order</div>
+            <div class="box">Schedule & Dispatch</div>
+            <div class="box">Payment Notification</div>
+        </div>
+
+        <!-- FIELD -->
+        <div class="column field">
+            <h4>FIELD AGENT</h4>
+            <div class="box">Log Trip</div>
+            <div class="box">Capture Notes</div>
+            <div class="box">Complete Work</div>
+            <div class="box">Generate Report</div>
+            <div class="box">Raise Invoice</div>
+            <div class="box">Record Payment</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
